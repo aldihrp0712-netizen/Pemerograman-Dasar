@@ -1,0 +1,249 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO9Nddhcfv3rZ4RX/9dn3y9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aldihrp0712-netizen/Pemerograman-Dasar/blob/main/pertemuan%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yf4ViByHp22N"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E2OHhUxyf5j4",
+        "outputId": "bd16703f-b9ae-4414-dd1e-f423be632051"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "1.Berapa km jarak rumah ketempat tukang bakso    :3.5\n",
+            "2.tempat tukang bakso ada di daerah mana          :bt aji, kota batam\n",
+            "3.Berapa porsi makan yang Anda beli              :0.5\n",
+            "3.Siapa Nama Pelanggan?                             :Aldi\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Data Float & str\n",
+        "\n",
+        "\n",
+        "#variabel\n",
+        "Jarak = float (input(\"1.Berapa km jarak rumah ketempat tukang bakso    :\"))\n",
+        "Daerah = str (input(\"2.tempat tukang bakso ada di daerah mana          :\"))\n",
+        "total = float (input(\"3.Berapa porsi makan yang Anda beli              :\"))\n",
+        "Nama = str (input(\"3.Siapa Nama Pelanggan?                             :\"))\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# PERCOBAAN OPERATOR,%d,%f,%s,%x,& %o\n",
+        "\n",
+        "#variabel\n",
+        "GAME = \"Mobile Legends\"\n",
+        "WAKTU_PERKIRAAN_1GAME = 20\n",
+        "LAMA_MAIN_KESELURUHAN = 80.0\n",
+        "SKOR_GAME_HARI_INI = 255\n",
+        "\n",
+        "# Output\n",
+        "print(\"1.Nama Game               : %s\" % (GAME))\n",
+        "print(\"2.Waktu 1 Game            : %d menit\" % (WAKTU_PERKIRAAN_1GAME))\n",
+        "print(\"3.Lama Main Total         : %.2f menit\" % (LAMA_MAIN_KESELURUHAN))\n",
+        "print(\"4.Skor Hari Ini           : %d\" % (SKOR_GAME_HARI_INI))\n",
+        "print(\"5.Skor Hari Ini           : %x\" % (SKOR_GAME_HARI_INI))\n",
+        "print(\"6.Skor Hari Ini           : %o\" % (SKOR_GAME_HARI_INI))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VjC8aYNfGjdz",
+        "outputId": "3675e797-9e85-4c47-ea75-cb413ce5b9b8"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.Nama Game               : Mobile Legends\n",
+            "2.Waktu 1 Game            : 20 menit\n",
+            "3.Lama Main Total         : 80.00 menit\n",
+            "4.Skor Hari Ini           : 255\n",
+            "5.Skor Hari Ini           : ff\n",
+            "6.Skor Hari Ini           : 377\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Kalkulator sederhana\n",
+        "\n",
+        "#variabel\n",
+        "a = 1000\n",
+        "b = 1000\n",
+        "\n",
+        "#Output\n",
+        "\n",
+        "print(\"1.penjumlahan            =\",a+b)\n",
+        "print(\"2.pengurangan            =\",a-b)\n",
+        "print(\"3.perkalian              =\",a*b)\n",
+        "print(\"4.pembagian              =\",a/b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RjKcbPnDnJ_F",
+        "outputId": "603b93d8-451b-4944-e247-18c5a9244620"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.penjumlahan            = 2000\n",
+            "2.pengurangan            = 0\n",
+            "3.perkalian              = 1000000\n",
+            "4.pembagian              = 1.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mengecek bilangan\n",
+        "\n",
+        "#variabel\n",
+        "bilangan = 6\n",
+        "hasil    = (bilangan > 0) and (bilangan % 2 == 0)\n",
+        "\n",
+        "\n",
+        "#output\n",
+        "print(\"Genap dan positif    =\", hasil)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wyZw6ijwo4IC",
+        "outputId": "72488fe3-f0d2-4a39-b86d-335d0444e328"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Genap dan positif    = True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Kalkulator Kasir\n",
+        "harga_makan = int (input(\"Berapa harga mi Ayam per porsi? = \"))\n",
+        "jumlah_makan =int (input(\"Berapa porsi yang Anda beli? = \"))\n",
+        "total_makan = harga_makan * Jumlah_makan\n",
+        "\n",
+        "#OUTPUT\n",
+        "print(f\"Harga makan per porsi = {harga_makan}, totalnya adalah {total_makan}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UqJNKZKgsx4f",
+        "outputId": "3b412116-1a93-4768-9d0f-39897409b658"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Berapa harga mi Ayam per porsi? = 35000\n",
+            "Berapa porsi yang Anda beli? = 5\n",
+            "Harga makan per porsi = 35000, totalnya adalah 175000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#konversi waktu, total detik ke jam:menit:detik\n",
+        "\n",
+        "#variabel\n",
+        "total_detik = int(input(\"masukkan total detik     = \"))\n",
+        "\n",
+        "#konversi\n",
+        "jam         = total_detik // 3600\n",
+        "sisa_detik  = total_detik % 3600\n",
+        "menit       = sisa_detik // 6\n",
+        "detik       = sisa_detik % 60\n",
+        "\n",
+        "#output\n",
+        "print(f\"hasil konversi           = {jam} jam,{menit} menit, {detik} detik\")\n"
+      ],
+      "metadata": {
+        "id": "Tzl1jfYh2ZKR",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "14b991fe-93e2-42c9-d773-0c2c9d28fd7d"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "masukkan total detik     = 358200\n",
+            "hasil konversi           = 99 jam,300 menit, 0 detik\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
