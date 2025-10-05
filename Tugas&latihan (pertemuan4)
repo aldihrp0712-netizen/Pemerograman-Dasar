@@ -1,0 +1,341 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOR8YElxeCYhHSnajJv6nzT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aldihrp0712-netizen/Pemerograman-Dasar/blob/main/Tugas%26latihan%20(pertemuan4)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ZjD0QpGJ6XzK"
+      },
+      "outputs": [],
+      "source": [
+        "# LATIHAN PERTEMUAN 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Menentukan Kelipatan 5\n",
+        "\n",
+        "angka = int(input(\"Masukkan sebuah angka: \"))\n",
+        "\n",
+        "if angka % 5 == 0:\n",
+        "    print(\"Kelipatan 5\")\n",
+        "else:\n",
+        "    print(\"Bukan kelipatan 5\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tEyaSMt0NaNY",
+        "outputId": "912d153a-2f66-4e78-f9f5-39a0813d7812"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan sebuah angka: 25\n",
+            "Kelipatan 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2. Menentukan Tahun Kabisat\n",
+        "\n",
+        "tahun = int(input(\"Masukkan tahun: \"))\n",
+        "\n",
+        "if tahun % 400 == 0:\n",
+        "    print(\"Tahun kabisat\")\n",
+        "elif tahun % 4 == 0 and tahun % 100 != 0:\n",
+        "    print(\"Tahun kabisat\")\n",
+        "else:\n",
+        "    print(\"Bukan tahun kabisat\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1CFjLB0IN0cj",
+        "outputId": "7360ce5e-b670-44fc-9453-7ec353a08591"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan tahun: 2025\n",
+            "Bukan tahun kabisat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3. Soal Matematika dengan Menggunakan If atau If Else atau If Elif Else\n",
+        "\n",
+        "hasil = 8 + 4\n",
+        "\n",
+        "if hasil > 10:\n",
+        "    print(\"Hasil lebih besar dari 10\")\n",
+        "else:\n",
+        "    print(\"Hasil tidak lebih besar dari 10\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RH_ZCCqJODML",
+        "outputId": "e2a74540-f06c-452a-b506-e9049e2c7ce4"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hasil tidak lebih besar dari 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4. Program unutk menampilkan nama bulan\n",
+        "\n",
+        "bulan = int(input(\"Masukkan angka bulan (1–12): \"))\n",
+        "\n",
+        "if bulan == 1:\n",
+        "    print(\"Januari\")\n",
+        "elif bulan == 2:\n",
+        "    print(\"Februari\")\n",
+        "elif bulan == 3:\n",
+        "    print(\"Maret\")\n",
+        "elif bulan == 4:\n",
+        "    print(\"April\")\n",
+        "elif bulan == 5:\n",
+        "    print(\"Mei\")\n",
+        "elif bulan == 6:\n",
+        "    print(\"Juni\")\n",
+        "elif bulan == 7:\n",
+        "    print(\"Juli\")\n",
+        "elif bulan == 8:\n",
+        "    print(\"Agustus\")\n",
+        "elif bulan == 9:\n",
+        "    print(\"September\")\n",
+        "elif bulan == 10:\n",
+        "    print(\"Oktober\")\n",
+        "elif bulan == 11:\n",
+        "    print(\"November\")\n",
+        "elif bulan == 12:\n",
+        "    print(\"Desember\")\n",
+        "else:\n",
+        "    print(\"Input salah\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1OIdNx2qPVe_",
+        "outputId": "9a780a26-24bc-4585-bf6a-889636554112"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka bulan (1–12): 13\n",
+            "Input salah\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5. Program yang meminta jam (0-23), lalu tampilkan salam\n",
+        "\n",
+        "jam = int(input(\"Masukkan jam (0–23): \"))\n",
+        "\n",
+        "if 0 <= jam <= 11:\n",
+        "    print(\"Selamat Pagi\")\n",
+        "elif 12 <= jam <= 15:\n",
+        "    print(\"Selamat Siang\")\n",
+        "elif 16 <= jam <= 18:\n",
+        "    print(\"Selamat Sore\")\n",
+        "elif 19 <= jam <= 23:\n",
+        "    print(\"Selamat Malam\")\n",
+        "else:\n",
+        "    print(\"Input salah\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YD5Cxj41QXmK",
+        "outputId": "45279491-cc6f-44ea-943e-877ac499de18"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jam (0–23): 10\n",
+            "Selamat Pagi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#  TUGAS PERTEMUAN 4"
+      ],
+      "metadata": {
+        "id": "CUdH291UeZpP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (\"\\n===SELAMAT DATANG DI KOTOR (KOPI TOGAR) ===\")\n",
+        "print (\"Menu Minuman & Makanan :  \")\n",
+        "print (\"1. Kopi kenangan Aldi   - Rp 21.000\")\n",
+        "print (\"2. Kopi Black Aren        - Rp 19.000\")\n",
+        "print (\"3. Roti Cokelat Hot       - Rp 12.000\")\n",
+        "print (\"======================================\")\n",
+        "\n",
+        "pilihan = int(input(\"Masukkan Pilihan Anda    : \"))\n",
+        "\n",
+        "if pilihan == 1 :\n",
+        "  nama_pesanan = \"Kopi KOTOR\"\n",
+        "  harga        = 21.000\n",
+        "elif pilihan == 2 :\n",
+        "  nama_pesanan = \"Kopi Black Aren\"\n",
+        "  harga        = 19.000\n",
+        "elif pilihan == 3 :\n",
+        "  nama_pesanan = \"Roti Cokelat Hot\"\n",
+        "  harga        = 12.000\n",
+        "\n",
+        "else:\n",
+        "  print(\"Pilihan tidak tersedia\")\n",
+        "  harga        = 0\n",
+        "  nama_pesanan = \"Tidak Ada Pesanan\"\n",
+        "\n",
+        "if harga > 0 :\n",
+        "  print(f\"Pesanan Anda Adalah {nama_pesanan} dengan harga {harga} \")\n",
+        "\n",
+        "  print(\"\\nKategori Diskon\")\n",
+        "  print(\"1. Diskon 70%\")\n",
+        "  print(\"2. Diskon 50%\")\n",
+        "  print(\"3. Diskon 30%\")\n",
+        "  pilih_diskon = int(input(\"Masukkan Pilihan Diskon (1-3) : \"))\n",
+        "\n",
+        "  if  pilih_diskon == 1 :\n",
+        "    diskon = 0.7\n",
+        "  elif pilih_diskon == 2 :\n",
+        "    diskon = 0.5\n",
+        "  elif pilih_diskon == 3 :\n",
+        "    diskon = 0.3\n",
+        "  else:\n",
+        "    diskon = 0\n",
+        "    print(\"Tidak ada diskon yang dipilih.\")\n",
+        "\n",
+        "  total_diskon = harga* diskon\n",
+        "  total_bayar  = harga - total_diskon\n",
+        "\n",
+        "  print(f\"Harga Sebelum diskon        : Rp {harga}\")\n",
+        "  print(f\"Total diskon yang diperoleh : Rp {total_diskon}\")\n",
+        "  print(f\"Total yang harus dibayar    : Rp {total_bayar}\")\n",
+        "\n",
+        "  print (\"\\n===....TERIMA KASIH SUDAH BELANJA DI KOTOR (KOPI TOGAR) .....===\")\n",
+        "  print (\"\\n=================================================================\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SVFRqQ7r6i27",
+        "outputId": "aa6812eb-a74c-4f17-bb79-424ce77dff7d"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "===SELAMAT DATANG DI KOTOR (KOPI TOGAR) ===\n",
+            "Menu Minuman & Makanan :  \n",
+            "1. Kopi kenangan Aldi   - Rp 21.000\n",
+            "2. Kopi Black Aren        - Rp 19.000\n",
+            "3. Roti Cokelat Hot       - Rp 12.000\n",
+            "======================================\n",
+            "Masukkan Pilihan Anda    : 1\n",
+            "Pesanan Anda Adalah Kopi KOTOR dengan harga 21.0 \n",
+            "\n",
+            "Kategori Diskon\n",
+            "1. Diskon 70%\n",
+            "2. Diskon 50%\n",
+            "3. Diskon 30%\n",
+            "Masukkan Pilihan Diskon (1-3) : 3\n",
+            "Harga Sebelum diskon        : Rp 21.0\n",
+            "Total diskon yang diperoleh : Rp 6.3\n",
+            "Total yang harus dibayar    : Rp 14.7\n",
+            "\n",
+            "===....TERIMA KASIH SUDAH BELANJA DI KOTOR (KOPI TOGAR) .....===\n",
+            "\n",
+            "=================================================================\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Dul6XR2AxAt8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
